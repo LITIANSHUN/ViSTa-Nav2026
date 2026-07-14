@@ -1,0 +1,40 @@
+{
+  "dataset": "AeroNet",
+  "version": "1.0.0",
+  "split": "train",
+  "description": "Training split sampled from the development environments. Trajectory and video entries should be added to the samples list.",
+  "coordinate_system": "ENU",
+  "position_unit": "meter",
+  "time_unit": "second",
+  "sampling_rate_hz": 10,
+  "mask_convention": {
+    "missing_mask": "1 indicates an observed localization state; 0 indicates an unavailable state",
+    "reliability": "Continuous confidence score in [0, 1]; larger values indicate more reliable localization"
+  },
+  "npz_required_keys": [
+    "trajectory",
+    "degraded_trajectory",
+    "timestamps",
+    "missing_mask",
+    "reliability",
+    "velocity",
+    "acceleration"
+  ],
+  "sample_schema": {
+    "trajectory_id": "Unique trajectory identifier, e.g., trajectory_000001",
+    "scene_id": "Scene identifier, e.g., scene_01",
+    "split": "One of train, val, seen_test, unseen_test",
+    "trajectory_file": "Relative path to the corresponding .npz file",
+    "video_file": "Relative path to the synchronized .mp4 file",
+    "instruction_ids": "List of annotation identifiers linked to this trajectory",
+    "coordinate_system": "Local East-North-Up (ENU)",
+    "sampling_rate_hz": "Trajectory sampling frequency in Hz",
+    "num_steps": "Number of synchronized trajectory states",
+    "degradation_types": "Subset of point_dropout, block_outage, multipath_noise, nlos_bias, drift, false_fix, mixed",
+    "start_position_enu_m": "Start position [east, north, up] in meters",
+    "goal_position_enu_m": "Goal position [east, north, up] in meters",
+    "environment_type": "One of open_space, urban_canyon, semi_structured, indoor"
+  },
+  "num_samples": 0,
+  "samples": []
+}

@@ -1,0 +1,45 @@
+seed: 2026
+data:
+  root: /home/tianshun/Downloads/aeronet_repro_code/data/data
+  train_split: train
+  val_split: val
+  test_split: unseen_test
+  sampling_hz: 10
+  max_len: 256
+  num_workers: 4
+  synthetic_fallback: false
+model:
+  hidden_dim: 256
+  condition_dim: 256
+  num_heads: 8
+  num_layers: 6
+  dropout: 0.1
+  action_horizon: 16
+  visual_horizon: 5
+  use_language: true
+  use_visual_foresight: true
+  use_reliability: true
+  use_receding_horizon: true
+train:
+  optimizer: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  batch_size: 32
+  epochs: 120
+  warmup_epochs: 5
+  grad_clip: 1.0
+  lambda_vis: 0.10
+  lambda_align: 0.05
+  lambda_obs: 1.0
+  device: cuda
+  amp: true
+  output_dir: outputs/train
+inference:
+  ode_steps: 20
+  success_radius_m: 20.0
+  receding_stride: 4
+physics:
+  dt: 0.1
+  vmax: 12.0
+  amax: 4.0
+  safety_clearance_m: 2.0

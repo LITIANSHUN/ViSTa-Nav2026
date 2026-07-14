@@ -1,0 +1,17 @@
+{
+  "dataset": "AeroNet",
+  "version": "1.0.0",
+  "description": "Natural-language navigation annotations aligned with UAV trajectories and first-person video sequences.",
+  "annotation_schema": {
+    "instruction_id": "Unique annotation identifier",
+    "trajectory_id": "Trajectory linked to this instruction",
+    "scene_id": "Scene identifier",
+    "instruction": "Natural-language navigation instruction",
+    "granularity": "One of global, segment, waypoint",
+    "language": "BCP-47 language tag, e.g., en",
+    "annotator_status": "One of generated, manually_verified, rejected",
+    "verification_count": "Number of independent manual checks"
+  },
+  "num_annotations": 0,
+  "annotations": []
+}
