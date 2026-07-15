@@ -2,7 +2,7 @@
 
 # A. AeroNet Dataset
 
-![Statistical analysis of the AeroNet.](https://github.com/user-attachments/assets/051d8569-2081-4b3a-8ef9-ce68ed6be6f7
+![Statistical analysis of the AeroNet.](https://github.com/user-attachments/assets/051d8569-2081-4b3a-8ef9-ce68ed6be6f7)
 
 **AeroNet** is a video-language UAV trajectory benchmark designed for studying
 long-horizon navigation under degraded or unavailable GNSS measurements. The
