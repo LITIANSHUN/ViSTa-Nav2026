@@ -2,7 +2,7 @@
 
 # A. AeroNet Dataset
 
-![Statistical analysis of the AeroNet.]https://github.com/user-attachments/assets/051d8569-2081-4b3a-8ef9-ce68ed6be6f7
+![Statistical analysis of the AeroNet.](https://github.com/user-attachments/assets/051d8569-2081-4b3a-8ef9-ce68ed6be6f7
 
 **AeroNet** is a video-language UAV trajectory benchmark designed for studying
 long-horizon navigation under degraded or unavailable GNSS measurements. The
@@ -11,7 +11,7 @@ natural-language annotations, and split metadata to support reproducible
 training and evaluation.
 
 ![Representative UAV trajectory samples under different GNSS observability
-conditions.]https://github.com/user-attachments/assets/de9e4e86-dd6e-42b9-a731-cc61b314f42e)
+conditions.](https://github.com/user-attachments/assets/de9e4e86-dd6e-42b9-a731-cc61b314f42e)
 
 > **Repository notice:** the `videos/`  and `training_frames/` directories
 > are intentionally partial in this package. They will be available upon acceptance.
@@ -196,7 +196,7 @@ python scripts/download_dataset.py --output data
 
 Recommended setup: Ubuntu 20.04.4 LTS (GNU/Linux 5.15.0-70-generic x86_64)
 
-![Overview of the proposed ViSTa-Nav framework for GNSS-degraded UAV long-horizon navigation.]https://github.com/user-attachments/assets/a4d27e16-c0c5-459d-ae10-8b2db95f7e55)
+![Overview of the proposed ViSTa-Nav framework for GNSS-degraded UAV long-horizon navigation.](https://github.com/user-attachments/assets/a4d27e16-c0c5-459d-ae10-8b2db95f7e55)
 
 ```bash
 conda env create -f environment.yml
